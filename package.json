@@ -1,0 +1,24 @@
+{
+  "name": "atividade01",
+  "version": "1.0.0",
+  "description": "Esse é um projeto Back-End criado e realizado no Senai Valinhos para aprimorar minhas habilidades dentro da matéria de Back-end, e para isso irei estruturar um projeto com o tema de filmes",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Senai",
+    "Back-end",
+    "Ds",
+    "Filmes"
+  ],
+  "author": "Bernardo Marques",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "nodemon": "^3.1.9",
+    "uuid": "^11.0.5"
+  }
+}
