@@ -1,5 +1,5 @@
-const Movie = require("../models/Movie");
-const MovieList = require("../models/MovieList");
+const Movie = require("../modules/Movie.js");
+const MovieList = require("../modules/MovieList.js");
 
 const lista = new MovieList();
 
@@ -26,9 +26,9 @@ const router = {
         }
     },
 
-    getAllMovie: (req, res) => {
+    getAllMovies: (req, res) => {
         try {
-            const movies = lista.getAllMovie();
+            const movies = lista.getAllMovies();
             res.status(200).json(movies);
         } catch (error) {
             res.status(404).json({
@@ -66,7 +66,7 @@ const router = {
             const movie = req.params.id;
             lista.deleteMovie(movie);
             res.status(200).json({
-                message: "Filme deletada com sucesso",
+                message: "Filme deletado com sucesso",
                 movie,
             });
         } catch (error) {

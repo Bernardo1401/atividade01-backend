@@ -12,14 +12,15 @@ class MovieList {
     getMovieById(id) {
         const movie = this.movies.find((movie) => movie.id == id);
         if (!movie) {
-            throw new Error("Música não encontrada");
+            throw new Error("Filme não encontrado");
         }
         return movie;
     }
 
     updateMovie(id, updateData) {
-        const movie = getmovieById(id);
-        Object.assign(movie, updateData);
+        const movie = this.
+        getMovieById(id);
+        Object.assign(movie, updateData); 
         return movie;
     }
 
@@ -29,10 +30,6 @@ class MovieList {
 
     getTotalMovies() {
         return this.movies.length;
-    }
-
-    getTop10Movies() {
-        return this.movies.sort((a, b) => b.plays - a.plays).slice(0, 10);
     }
 }
 
