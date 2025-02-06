@@ -9,4 +9,4 @@ class Movie {
         this.director = director;
     }
 }
-module.exports = Song;
+module.exports = Movie;
