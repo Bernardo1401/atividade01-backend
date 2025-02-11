@@ -1,0 +1,166 @@
+{
+	"info": {
+		"_postman_id": "d7f6d370-71c5-408c-a34d-f184eb344f56",
+		"name": "back-end marcelo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37231881"
+	},
+	"item": [
+		{
+			"name": "atividade 01",
+			"item": [
+				{
+					"name": "Buscar filmes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/movies",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"movies"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar filme por id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/movies/0b9921df-6d09-470f-9750-b4d732f70943",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"movies",
+								"0b9921df-6d09-470f-9750-b4d732f70943"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Atualizar filme",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Tropa de elite\",\r\n    \"gender\": \"ação\",\r\n    \"duration\": 116,\r\n    \"director\": \"José Padilha\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/movies/1b8d087f-1280-416d-9249-9b700b47f8f5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"movies",
+								"1b8d087f-1280-416d-9249-9b700b47f8f5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Adicionar filme",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Vingadores Ultimato\",\r\n    \"gender\": \"Ficção\",\r\n    \"duration\": 181,\r\n    \"director\": \"Joe Russo\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/movies",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"movies"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Remover filme",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/movies/a4298d47-f59f-4f4c-b770-9bd47a713b1f",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"movies",
+								"a4298d47-f59f-4f4c-b770-9bd47a713b1f"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "<title>Tropa de Elite</title>\r\n<gender>ação</gender>\r\n<duration>116</duration>\r\n<director>José Padilha</director>",
+							"options": {
+								"raw": {
+									"language": "xml"
+								}
+							}
+						},
+						"url": {
+							"raw": "ttp://localhost:3000/api/movies/",
+							"protocol": "ttp",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"movies",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
